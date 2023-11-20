@@ -1,0 +1,262 @@
+.historia-content {
+    display: flex;
+    align-items: center;
+}
+
+.historia-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.historia-image img {
+    max-width: 450PX;
+    height: 400PX;
+}
+
+.historia-text {
+    flex: 2;
+}
+
+
+
+.menu {
+    position: relative; 
+    z-index: 1; 
+}
+
+
+/* Estilos para la sección de contacto */
+.contacto {
+    background: rgb(22, 36, 61);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contacto-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imagen-superior img {
+    width: 250px;
+    height: 120px;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.redes-sociales-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.redes-sociales-list li {
+    margin: 0 10px;
+}
+
+.redes-sociales-list a img {
+    width: 30px;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.columna {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    margin-right: 5px; /* Añadir margen derecho para separar las columnas */
+}
+
+
+.columna h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Ajuste de margen inferior para direcciones y números de teléfono */
+.columna .p2 {
+    font-size: 16px;
+    margin-bottom: 5px; /* Margen inferior común */
+    color: black;
+}
+/*flechas imagenes */
+.historia-image {
+    position: relative;
+}
+
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
+
+.flecha.izquierda {
+    left: 0;
+}
+
+.flecha.derecha {
+    right: 0;
+}
+
+/* parte inferior*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer {
+  position: absolute;
+  top:130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1800px;
+  width: 100%;
+  background: #000000;
+  border-radius: 1px;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+ .footer-col form button {
+  background: #ca1f1f;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}

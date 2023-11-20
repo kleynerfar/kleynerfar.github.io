@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-content {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+  
+  .logo {
+    margin-right: 50px;
+    margin-left: 190px;
+    width: 250px;
+    height: 150px; /* Espacio entre la imagen y el texto */
+  }
+  
+  h1 {
+    margin: 0; /* Elimina el margen predeterminado del h1 */
+  }
+  
+section{
+    padding: 20px;
+}
+p{
+    color: rgb(116, 116, 116);
+}
+
+.encabezado{
+    width: 100%;
+    background: rgb(14, 24, 43);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* --------- */
+.lista{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    padding: 20px 30px;
+    color: white;    
+}
+.item:hover{
+    background: rgb(22, 36, 61);
+    border-bottom: solid rgb(221, 221, 221) 1px;
+}
+
+.listItem{
+    position: relative;
+}
+.slide{
+    position: absolute;
+    display: none;
+    top: 33px;
+    background: rgb(14, 24, 43);
+    width: 200px;
+}
+
+.listItem:hover > .slide{
+    display: block;
+}
+.listItem .slide li:hover > ul{
+    display: block;
+}
+.slide li{
+    position: relative;
+}
+.slide ul{
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+.slide li a{
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+.slide li a:hover{
+    background: rgb(22, 36, 61);
+}
+
+#boton{
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:850px) {
+    #boton{
+        display: block;
+    }
+    .menu{
+        width: 320px;
+        height: calc(100vh - 90px);
+        background: rgb(14, 24, 43);
+        position: absolute;
+        top: 60px;
+        left: -200%;
+        transition: all 1s;
+        overflow: scroll;
+
+    }
+    .lista{
+        flex-direction: column;
+    }
+    .slide{
+        position: relative;
+        top: 0;
+        display: none;
+        width: 100%;
+    }
+    .slide ul{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    a{
+        display: block!important;
+        padding: 20px 35px!important;
+    }
+
+    .listItem > .slide li a{
+        margin-left: 20px;
+    }
+    .listItem .slide li > ul li a{
+        margin-left: 40px;
+    }
+    .listItem:hover > .slide{
+        display: none;
+    }
+    .listItem .slide li:hover > ul{
+        display: none;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .menu{
+        width: 100%;
+       
+    }
+}
+
+--------------Imagenes que cambian cada Segundos------
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 650px;
+    display: none;
+  }
+  
+  .carousel-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    font-size: 24px;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  

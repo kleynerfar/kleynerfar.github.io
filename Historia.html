@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMICON</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/historia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header-content">
+        <a href="index.html">
+            <img class="logo" src="img/camicon logo.jpeg" alt="Logo de CAMICON">
+        </a>
+                <h1>Camara de la Industria de la Construcción</h1>
+      </div>
+      
+    <header class="encabezado">
+        <div class="logo__div">
+        </div>
+        <nav class="menu" id="menu">
+            <ul class="lista">
+                <li class="listItem">
+                    <a class="item" href="index.html"><i class="fab fa-servicestack"></i> Home</a>
+                    
+                </li>
+                <li class="listItem">
+                    <a class="item" href="#"><i class="fab fa-servicestack"></i> ¿Quienes Somos ? ⇣</a>
+                    <ul class="slide">
+                        <li><a href="Misión_Visión.html">Visión y Misión</a></li>
+                        <li><a href="#">Autoridades</a></li>
+                        <li><a href="#">Transparencia</a></li>
+                        <li><a href="#">Legalidad Camicon</a></li>
+
+
+                    </ul>
+                </li>
+                <li class="listItem">
+                    <a class="item" href="#"><i class="fab fa-servicestack"></i> Ofertas Academicas ></a>
+                    <ul class="slide">
+                        <li><a href="#">Certificaciones</a></li>
+                        <li>
+                            <a class="item" href="#">Cursos del Ministerio del Trabajo</a>
+                            <ul class="slide">
+                                <li><a href="#">curso 1</a></li>
+                                <li><a href="#">curso 2</a></li>
+                                <li><a href="#">curso 3</a></li>
+                                <li><a href="#">curso 4</a></li>
+                                <li><a href="#">curso 5</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Maestrias UDIMA</a></li>
+                        <li><a href="#">Diplomados</a></li>
+                    </ul>
+                </li>                
+                <li class="listItem">
+                    <a class="item" href="#"><i class="fas fa-location-arrow"></i>Socios</a>
+                    <ul class="slide">
+                        <li><a href="#">Requisitos </a></li>
+                        <li><a href="#">Beneficios</a></li>
+                        <li><a href="#">Inscripción Pagos</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="listItem">
+                    <a class="item" href="#"><i class="fas fa-info"></i> Servicios </a>
+                    <ul class="slide">
+                        <li><a href="#">Cenamaco </a></li>
+                    </ul>
+                </li>
+                <li class="listItem">
+                    <a class="item" href="#"><i class="fas fa-info"></i> Ingresar o Registrar</a>
+                    <ul class="slide">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Registrar</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="boton__div">
+        </div>
+    </header>
+
+
+  <style>
+  
+
+    body {
+    
+      justify-content: flex-end; /* Alinea el contenido al final (derecho) */
+      align-items: flex-start; /* Alinea el contenido en la parte superior */
+      min-height: 120vh;
+
+    }
+
+    .navigation {
+    position: fixed;
+    top: 220px; /* Ajusta la distancia desde la parte superior */
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background: rgb(136, 126, 126);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.8s;
+    z-index: 999;
+    }
+
+    .navigation.active {
+      width: 150px;
+      height: 150px;
+      transition-delay: 0s;
+    }
+
+    .navigation span {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff0e;
+      border-radius: 50%;
+      transform: translate(calc(8px * var(--x)), calc(8px * var(--y)));
+      transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
+      transition-delay: calc(0.1s * var(--i));
+    }
+
+    .navigation.active span {
+      width: 35px;
+      height: 35px;
+      background: #ffffff00;
+      transform: translate(calc(50px * var(--x)), calc(50px * var(--y)));
+    }
+
+    .navigation span ion-icon {
+      transition: 0.5s;
+      font-size: 0em;
+    }
+
+    .navigation.active span ion-icon {
+      font-size: 1.35em;
+      color: #ffffff00;
+    }
+
+    .navigation.active span:hover ion-icon {
+      color: #2dfc52;
+      filter: drop-shadow(0 0 2px #2dfc52) drop-shadow(0 0 5px #2dfc52) drop-shadow(0 0 15px #2dfc52);
+    }
+  </style>
+
+
+<div class="navigation">
+    <span style="--i:0;--x:-1;--y:0;" onclick="window.location.href='index.html';" style="cursor: pointer;">
+        <img src="img/Redes Sociales/linkedin.png" alt="Imagen" style="width: 110%; height: 110%;">
+    </span>
+    
+  <span style="--i:1;--x:1;--y:0;">
+    <img src="img/Redes Sociales/youtube.png" alt="Imagen" style="width: 110%; height: 110%;">
+</span>
+  <span style="--i:2;--x:0;--y:-1;">
+    <img src="img/Redes Sociales/whatsapp.png" alt="Imagen" style="width: 110%; height: 110%;">
+</span>
+  <span style="--i:3;--x:0;--y:1;">
+    <img src="img/Redes Sociales/tik-tok.png" alt="Imagen" style="width: 110%; height: 110%;">
+</span>
+  <span style="--i:4;--x:1;--y:1;">
+    <img src="img/Redes Sociales/telegrama.png" alt="Imagen" style="width: 110%; height: 110%;">
+</span>
+  <span style="--i:5;--x:-1;--y:-1;">
+    <img src="img/Redes Sociales/instagram.png" alt="Imagen" style="width: 110%; height: 110%;">
+</span>
+  <span style="--i:6;--x:0;--y:0;">
+    <img src="img/Redes Sociales/salida.png" alt="Imagen" style="width: 110%; height: 110%;">
+</span>
+  <span style="--i:7;--x:-1;--y:1;">
+    <img src="img/Redes Sociales/gorjeo.png" alt="Imagen" style="width: 110%; height: 110%;">
+</span>
+  <span style="--i:8;--x:1;--y:-1;">
+    <img src="img/Redes Sociales/facebook.png" alt="Imagen" style="width: 110%; height: 110%;">
+</span>
+</div>
+
+<script>
+  const navigation = document.querySelector(".navigation");
+
+  
+
+  navigation.addEventListener("click", () => {
+    navigation.classList.toggle("active");
+  });
+</script>
+
+    <section class="historia">
+        <div class="container">
+            <div class="historia-content">
+                <div class="historia-image">
+                    <img id="imagenRotativa" src="img/imagen1.jpg" alt="Imagen de la historia de CAMICON">
+                    <div class="flecha izquierda" onclick="cambiarImagen(-1)"><</div>
+                    <div class="flecha derecha" onclick="cambiarImagen(1)">></div>
+                </div>
+                <script src="js/Historia.js"></script>
+
+                <div class="historia-text">
+                    <h2>Historia de CAMICON</h2>
+                   <BR> 
+                    <p1>
+                        La Cámara de la Industria de la Construcción (CAMICON) es una organización líder con una rica historia en el sector de la construcción. Desde su fundación en [año de fundación], hemos estado comprometidos con la excelencia, la seguridad y la sostenibilidad en cada proyecto.
+                    </p1>
+                    <p1>
+                        A lo largo de los años, CAMICON ha desempeñado un papel fundamental en el desarrollo y crecimiento de la industria de la construcción en nuestra región. Nuestra visión de promover la calidad y la transparencia en la industria nos ha llevado a ser reconocidos como un referente en el sector.
+                    </p1>
+                    <p1>
+                        Nuestra dedicación y perseverancia han sido clave para superar desafíos y alcanzar logros significativos. En la actualidad, CAMICON sigue comprometido con sus valores y se esfuerza por continuar siendo un motor de innovación y desarrollo en la industria de la construcción.
+                    </p1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Info</h4>
+            <ul class="links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Compressions</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Collection</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul class="links">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Payment Options</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="links">
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Disclaimer</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.798562885784!2d-78.48956679154054!3d-0.18031289079216148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59b6e1bafd20f%3A0x6b4c82c4ac34283!2sCAMICON%20(EDIFICIO%20C%C3%81MARA%20DE%20LA%20CONSTRUCCI%C3%93N)!5e0!3m2!1ses-419!2sec!4v1700164906549!5m2!1ses-419!2sec" width="280" height="190" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>           
+             <form action="#">
+              <input type="text" placeholder="Enter your email address" required>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <div class="icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+   
+</body>
+
+</html>
